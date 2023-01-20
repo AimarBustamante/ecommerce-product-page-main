@@ -1,0 +1,63 @@
+// * General Styles
+
+// Colors
+
+// Primary
+$orange: hsl(26, 100%, 55%);
+$paleOrange: hsl(25, 100%, 94%);
+
+// Neutral
+$verydarkblue: hsl(220, 13%, 13%);
+$darkGrayishBlue: hsl(219, 9%, 45%);
+$grayishBlue: hsl(220, 14%, 75%);
+$lightGrayishBlue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+$black: #000;
+$blackModal: hsla(0, 0%, 0%, 0.5);
+
+// Fonts
+$kumbhSans: 'Kumbh Sans', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $kumbhSans;
+}
+
+.main-container{
+    width: 375px;
+    margin: auto;
+    position: relative;
+
+    @media (min-width: 1115px){
+        width: 100%;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $orange;
+    border-radius: 50px;
+}
+

@@ -1,0 +1,33 @@
+@use "general";
+@use "mixins";
+
+.modal-navbar{
+
+    &__background{
+        @include mixins.modal-background
+    }
+    
+    background-color: general.$white;
+    width: 250px;
+    height: 100vh;
+    padding: 28px 24px;
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    &__link{
+        color: general.$verydarkblue;
+        font-weight: 700;
+        font-size: 1.1em;
+    }  
+    
+    &__close{
+        cursor: pointer;
+    }
+}
+

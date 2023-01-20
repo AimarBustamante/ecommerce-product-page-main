@@ -1,0 +1,23 @@
+@use "general";
+@use "header";
+@use "navbar";
+@use "modal-navbar";
+@use "gallery";
+@use "details";
+@use "input";
+@use "modal-cart";
+@use "content";
+@use "modal-gallery";
+@use "footer";
+
+// Style toggler for modal
+.show{
+    display: block;
+}
+
+.cart-empty{
+    text-align: center;
+    margin-top: 15%;
+    font-weight: 700;
+    color: general.$darkGrayishBlue;
+}

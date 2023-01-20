@@ -1,0 +1,88 @@
+@use "general" as g;
+@use "mixins";
+
+.details{
+
+    padding: 24px;
+
+    &__company{
+        color: g.$orange;
+        text-transform: uppercase;
+        font-size: .8em;
+        letter-spacing: 1.5px;
+        margin-bottom: 12px;
+    }
+
+    &__title{
+        font-size: 1.7em;
+        margin-bottom: 16px;
+    }
+
+    &__description{
+        font-size: .94em;
+        color: g.$darkGrayishBlue;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__prices{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+    &__now{
+        font-size: 1.8em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__discount{
+        font-size: .5em;
+        background-color: g.$paleOrange;
+        color: g.$orange;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    &__before{
+        font-weight: 700;
+        color: g.$grayishBlue;
+        text-decoration: line-through;
+    }
+
+    &__button{
+        @include mixins.button;
+    }
+
+    @media (min-width: 1115px){
+
+        width: 446px;
+        padding: 60px 0 0 0;
+
+        &__title{
+            font-size: 2.7em;
+            margin-bottom: 48px;
+        }
+
+        &__description{
+            font-size: .9em;
+            margin-bottom: 37px;
+        }
+
+        &__prices{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .5em;
+        }
+
+        &__product-quantity{
+            display: flex;
+            gap: 32px;
+        }
+
+    } 
+}

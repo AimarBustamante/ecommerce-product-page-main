@@ -1,0 +1,30 @@
+@use "general" as g;
+@use "mixins";
+
+.input{
+
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    background-color: g.$lightGrayishBlue;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    &__minus{
+        @include mixins.changeNumber(24px, 5px);
+    }    
+
+    &__number{
+        width: 100%;
+        border: none;
+        font-size: 1.2em;
+        font-weight: 700;
+        background-color: g.$lightGrayishBlue;
+        font-family: g.$kumbhSans;
+        text-align: center;
+    }
+    
+    &__plus{
+        @include mixins.changeNumber(19px, 3px);
+    }
+}

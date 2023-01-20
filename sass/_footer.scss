@@ -1,0 +1,18 @@
+@use "general" as g;
+@use "mixins";
+
+.attribution{
+
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.5;
+
+    &__link{
+        color: g.$black;
+        transition: color .25s;
+        &:hover{
+            color: g.$orange;
+        }
+    }
+}
+

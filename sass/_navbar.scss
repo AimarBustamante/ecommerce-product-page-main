@@ -1,0 +1,28 @@
+@use "general";
+
+.navbar{
+
+    display: none;
+
+    width: 400px;
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link{
+        display: block;
+        height: 112px;
+        color: general.$verydarkblue;
+        padding-top: 48px;
+        &:hover{
+            border-bottom: 4px solid general.$orange;
+        }
+    }
+
+    @media (min-width: 1115px){
+        display: block;
+    }
+
+}
